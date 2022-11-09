@@ -2,11 +2,26 @@ body, html {
     height: 100%;
 }
 
-.centered {
+.parchment {
+    background-image: url("img_resources/parchment.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    max-height: 100%;
+    max-width: 1000px;
     margin: auto;
-    padding: 30px;
-    max-width: 700px;
-    background-color: peachpuff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.centered {
+    padding-top: 40px;
+    max-width: 1000px;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .mainbg {
@@ -23,4 +38,31 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.category {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.recipeList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.recipeimg {
+    max-width: calc(80%);
+    max-height: 315px;
+    margin-bottom: 10px;
 }
